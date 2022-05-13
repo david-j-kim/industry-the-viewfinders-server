@@ -12,9 +12,7 @@ app.use(express.static('public'));
 
 // Routes
 const sampleRouter = require('./routes/sample');
-const sample2Router = require('./routes/sample2');
 app.use('/sample', sampleRouter);
-app.use('/sample2', sample2Router);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
